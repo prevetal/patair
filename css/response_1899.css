@@ -21,8 +21,15 @@
     }
 
 
+    .first_section .data
+    {
+        padding-left: 120px;
+    }
+
+
     .first_section .cont
     {
+        min-height: 632px;
         padding-top: 40px;
         padding-bottom: 40px;
     }
@@ -34,12 +41,19 @@
     }
 
 
+    .first_section .solutions
+    {
+        top: 212px;
+        right: 92px;
+    }
+
+
     .first_section .big_arrow
     {
-        top: 24px;
+        left: -24px;
 
-        width: 112px;
-        height: 117px;
+        width: 140px;
+        height: 146px;
     }
 
 
