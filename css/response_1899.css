@@ -1,0 +1,55 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 24px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+    .first_section .cont
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .first_section .title
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .first_section .big_arrow
+    {
+        top: 24px;
+
+        width: 112px;
+        height: 117px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}

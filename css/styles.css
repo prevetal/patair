@@ -835,9 +835,9 @@ header .search .close_btn:hover
 
 
 
-/*-----------------
-    Main slider
------------------*/
+/*-------------------
+    First section
+-------------------*/
 .first_section
 {
     padding-right: 30px;
@@ -1582,6 +1582,15 @@ footer .links .items a
     text-decoration: none;
 
     color: currentColor;
+}
+
+
+footer .links .items a:hover,
+footer .links .items a.actie
+{
+    text-decoration: underline;
+
+    text-decoration-thickness: 1px;
 }
 
 
