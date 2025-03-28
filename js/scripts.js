@@ -101,6 +101,55 @@ document.addEventListener('DOMContentLoaded', function() {
 			$('header .search form').removeClass('show')
 		}
 	})
+
+
+	// Fancybox
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.trapFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
+	Fancybox.defaults.l10n = {
+		CLOSE: 'Закрыть',
+		NEXT: 'Следующий',
+		PREV: 'Предыдущий',
+		MODAL: 'Вы можете закрыть это модальное окно нажав клавишу ESC'
+	}
+
+
+	// Modals
+	$('.modal_btn').click(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: document.getElementById(e.target.getAttribute('data-modal')),
+			type: 'inline'
+		}])
+	})
+
+
+	// Phone input mask
+	const phoneInputs = document.querySelectorAll('input[type=tel]')
+
+	if (phoneInputs) {
+		phoneInputs.forEach(el => {
+			IMask(el, {
+				mask: '+{7} (000) 000-00-00',
+				lazy: true
+			})
+		})
+	}
+
+
+	// Select file
+	const fileInputs = document.querySelectorAll('form input[type=file]')
+
+	if (fileInputs) {
+		fileInputs.forEach(el => {
+			el.addEventListener('change', () => el.closest('.file').querySelector('label span').innerText = el.value)
+		})
+	}
 })
 
 
