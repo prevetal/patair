@@ -52,6 +52,54 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	// Articles slider
+	const articlesSliders = [],
+		articles = document.querySelectorAll('.articles .swiper')
+
+	articles.forEach((el, i) => {
+		el.classList.add('articles_s' + i)
+
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 12,
+					slidesPerView: 'auto'
+				},
+				480: {
+					spaceBetween: 20,
+					slidesPerView: 2
+				},
+				768: {
+					spaceBetween: 30,
+					slidesPerView: 3
+				},
+				1024: {
+					spaceBetween: 24,
+					slidesPerView: 3
+				},
+				1280: {
+					spaceBetween: 30,
+					slidesPerView: 3
+				}
+			}
+		}
+
+		articlesSliders.push(new Swiper('.articles_s' + i, options))
+	})
+
+
 	// Menu
 	$('header .menu_item > a.sub_link').click(function(e) {
 		e.preventDefault()
