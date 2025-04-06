@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		let options = {
 			loop: true,
+			loopAdditionalSlides: 1,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		let options = {
 			loop: true,
+			loopAdditionalSlides: 1,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
@@ -97,6 +99,39 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 
 		articlesSliders.push(new Swiper('.articles_s' + i, options))
+	})
+
+
+	// Text slider
+	const textSliders = [],
+		textSlider = document.querySelectorAll('.text_block .slider .swiper')
+
+	textSlider.forEach((el, i) => {
+		el.classList.add('text_s' + i)
+
+		let options = {
+			loop: true,
+			loopAdditionalSlides: 1,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			spaceBetween: 0,
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		}
+
+		textSliders.push(new Swiper('.text_s' + i, options))
 	})
 
 
@@ -198,6 +233,35 @@ document.addEventListener('DOMContentLoaded', function() {
 			el.addEventListener('change', () => el.closest('.file').querySelector('label span').innerText = el.value)
 		})
 	}
+
+
+	// Contacts info - Maps
+	$('.contacts_info .item').click(function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			const mapIndex = $(this).data('map-index')
+
+			$('.contacts_info .item').removeClass('active')
+			$(this).addClass('active')
+
+			$('.contacts_info .map').hide()
+			$('.contacts_info .map' + mapIndex).fadeIn(300)
+
+			initMap(mapIndex)
+		}
+	})
+})
+
+
+
+window.addEventListener('load', function () {
+	// Aligning elements in the grid
+	document.querySelectorAll('.articles .row').forEach(el => {
+		let styles = getComputedStyle(el)
+
+		articlesHeight(el, parseInt(styles.getPropertyValue('--count')))
+	})
 })
 
 
@@ -211,6 +275,12 @@ window.addEventListener('resize', function () {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
 
+		// Aligning elements in the grid
+		document.querySelectorAll('.articles .row').forEach(el => {
+			let styles = getComputedStyle(el)
+
+			articlesHeight(el, parseInt(styles.getPropertyValue('--count')))
+		})
 
 		// Mob. version
 		if (!fakeResize) {
@@ -230,3 +300,85 @@ window.addEventListener('resize', function () {
 		}
 	}
 })
+
+
+
+// Aligning articles
+function articlesHeight(context, step) {
+	let start = 0,
+		finish = step,
+		items = [...context.querySelectorAll('.article')],
+		itemsName = context.querySelectorAll('.name'),
+		i = 0
+
+	itemsName.forEach(el => el.style.height = 'auto')
+
+	items.forEach(el => {
+		items.slice(start, finish).forEach(el => el.setAttribute('nodeList', i))
+
+		setHeight(context.querySelectorAll('[nodeList="' + i + '"] .name'))
+
+		start = start + step
+		finish = finish + step
+		i++
+	})
+}
+
+
+
+// Init maps
+function initMap(mapIndex) {
+	if (!$('#map' + mapIndex).hasClass('initialized')) {
+		const placemarks = [
+			{
+				center: [55.843373, 37.526115],
+				balloonContent: String() + '<div class="logo">'
+						+ '<img src="../images/logo.svg" alt="">'
+					+ '</div>'
+
+					+ '<div class="name">ЦЕНТРАЛЬНЫЙ ОФИС</div>',
+				balloonOffset: [-10, -24]
+			},
+			{
+				center: [55.516700, 36.970085],
+				balloonContent: String() + '<div class="logo">'
+						+ '<img src="../images/logo.svg" alt="">'
+					+ '</div>'
+
+					+ '<div class="name">Производство</div>',
+				balloonOffset: [-10, -24]
+			}
+		]
+
+		ymaps.ready(() => {
+			let myMap = new ymaps.Map('map' + mapIndex, {
+				center: placemarks[mapIndex - 1].center,
+				zoom: 16,
+				controls: []
+			})
+
+			// Кастомный маркер
+			const myPlacemark = new ymaps.Placemark(placemarks[mapIndex - 1].center, {
+				balloonContent: placemarks[mapIndex - 1].balloonContent
+			}, {
+				hideIconOnBalloonOpen: true,
+				balloonShadow: false,
+				balloonOffset: placemarks[mapIndex - 1].balloonOffset
+			})
+
+			myMap.geoObjects.add(myPlacemark)
+
+			// myMap.controls.add('zoomControl', {
+			// 	position : {
+			// 		right : '20px',
+			// 		top   : '20px'
+			// 	}
+			// })
+
+			myMap.behaviors.disable('scrollZoom')
+			myPlacemark.balloon.open()
+
+			$('#map' + mapIndex).addClass('initialized')
+		})
+	}
+}
