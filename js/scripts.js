@@ -212,6 +212,17 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	// Zoom images
+	Fancybox.bind('.fancy_img', {
+		Image: {
+			zoom: false
+		},
+		Thumbs: {
+			autoStart: false
+		}
+	})
+
+
 	// Phone input mask
 	const phoneInputs = document.querySelectorAll('input[type=tel]')
 
@@ -250,6 +261,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			initMap(mapIndex)
 		}
+	})
+
+
+	// Product info
+	$('.product_info .head .title').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+		$('.product_info .head .data').slideToggle(300)
+	})
+
+
+	// Custom select - Nice select
+	const selects = document.querySelectorAll('select:not(.skip)')
+
+	if (selects) {
+		selects.forEach(el => {
+			NiceSelect.bind(el, {
+				placeholder: el.getAttribute('data-placeholder')
+			})
+
+			el.addEventListener('change', () => el.classList.add('selected'))
+
+			if (el.querySelector('option[selected]')) {
+				el.classList.add('selected')
+			}
+		})
+	}
+
+
+	// Download files
+	$('.download_files .item .name').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
+
+	$('.download_files .item select[name="chapter"]').change(function(e) {
+		const form = $(this).closest('.form')
+
+		form.find('select[name="equipment"]').removeAttr('disabled')
+		form.find('.nice-select.disabled').removeClass('disabled')
 	})
 })
 

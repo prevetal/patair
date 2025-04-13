@@ -1804,6 +1804,46 @@ header .search .close_btn:hover
 }
 
 
+.text_block ul
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.text_block ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 32px;
+
+    list-style-type: none;
+}
+
+
+.text_block ul li:before
+{
+    position: absolute;
+    top: 13px;
+    left: 0;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
 
 /*-------------------
     First section
@@ -2146,28 +2186,35 @@ header .search .close_btn:hover
 {
     position: relative;
 
-    padding-bottom: 66.592%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 300px;
 
     border-radius: 20px;
-    background: #ddd;
+}
+
+
+.equipment .item .thumb.bg1
+{
+    background: #f1f5ff;
+}
+
+.equipment .item .thumb.bg2
+{
+    background: #f9faff;
 }
 
 
 .equipment .item .thumb img
 {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-
     display: block;
 
-    width: 100%;
-    height: 100%;
-
-    border-radius: inherit;
-
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -3509,6 +3556,765 @@ header .search .close_btn:hover
 
     border-radius: 20px;
     background: #fff;
+}
+
+
+
+/*------------------
+    Product info
+------------------*/
+.product_info .head
+{
+    margin-bottom: 44px;
+}
+
+
+.product_info .head .title
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
+    line-height: calc(100% + 8px);
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    cursor: pointer;
+
+    color: #6d7995;
+
+    gap: 20px;
+}
+
+
+.product_info .head .title span
+{
+    max-width: calc(100% - 34px);
+}
+
+
+.product_info .head .title .icon
+{
+    position: relative;
+    top: 4px;
+
+    display: block;
+
+    width: 14px;
+    height: 8px;
+
+    color: #9abbd8;
+}
+
+
+.product_info .head .data
+{
+    font-size: 24px;
+    line-height: calc(100% + 4px);
+
+    display: none;
+
+    padding-top: 20px;
+}
+
+
+.product_info .head .data > * + *
+{
+    margin-top: 10px;
+}
+
+
+.product_info .head .data a
+{
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.product_info .head .data a:hover
+{
+    color: #9bbdda;
+}
+
+
+.product_info .head .data a.active
+{
+    font-weight: 700;
+
+    color: #9bbdda;
+}
+
+
+.product_info .row
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.product_info .col_left
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 340px;
+    max-width: 100%;
+
+    gap: 40px;
+}
+
+
+.product_info .col_main
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 480px);
+    margin-left: auto;
+
+    gap: 40px;
+}
+
+
+.product_info .image
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 332px;
+    max-width: 100%;
+    height: 304px;
+
+    text-decoration: none;
+
+    color: currentColor;
+    border: 1px solid #cddeec;
+    border-radius: 15px;
+}
+
+
+.product_info .image img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.product_info .files
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.product_info .files a
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    text-decoration: none;
+
+    color: #6d7995;
+}
+
+
+.product_info .files .icon
+{
+    display: block;
+
+    width: 37px;
+    height: 42px;
+}
+
+
+.product_info .files span
+{
+    align-self: center;
+
+    width: calc(100% - 59px);
+}
+
+
+.product_info .back_link
+{
+    margin-top: auto;
+
+    color: #6d7995;
+}
+
+
+.product_info .back_link a
+{
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.product_info .product_name
+{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: calc(100% + 4px);
+
+    display: block;
+
+    text-transform: uppercase;
+}
+
+
+.product_info .order_code
+{
+    padding-bottom: 35px;
+
+    border-bottom: 1px solid #9bbdda;
+}
+
+
+.product_info .order_code .label
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+
+    margin-bottom: 36px;
+    padding-bottom: 15px;
+
+    color: #9bbdda;
+    border-bottom: 1px solid #9bbdda;
+}
+
+
+.product_info .order_code .val img
+{
+    display: block;
+
+    width: 691px;
+    max-width: 100%;
+}
+
+
+.product_info .text_block
+{
+    font-size: 18px;
+    line-height: calc(100% + 4px);
+}
+
+
+.product_info .text_block > *
+{
+    margin-bottom: 24px;
+}
+
+
+.product_info .text_block ul
+{
+    gap: 8px;
+}
+
+
+.product_info .text_block ul li:before
+{
+    top: 10px;
+}
+
+
+
+/*--------------
+    Services
+--------------*/
+.services .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
+
+.services .row > *
+{
+    width: calc(33.333% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+.services .service
+{
+    position: relative;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 24px 24px 36px 32px;
+
+    text-decoration: none;
+
+    color: currentColor;
+    border-radius: 15px;
+}
+
+
+.services .service:nth-child(2n+1)
+{
+    background: #f2f6ff;
+}
+
+.services .service:nth-child(2n)
+{
+    background: #f9faff;
+}
+
+
+.services .service .name
+{
+    font-size: 24px;
+    line-height: 28px;
+
+    align-self: center;
+
+    width: calc(100% - 74px);
+
+    color: #6d7995;
+}
+
+
+.services .service .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 54px;
+    height: 64px;
+}
+
+
+.services .service .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.services .service .desc
+{
+    font-size: 18px;
+    line-height: calc(100% + 2px);
+
+    width: 100%;
+    margin-top: 16px;
+}
+
+
+.services .service .arrow
+{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 70px;
+    height: 28px;
+
+    color: #9bbdda;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+
+.services .service .arrow svg
+{
+    display: block;
+
+    width: 18px;
+    height: 12px;
+}
+
+
+.services .service .download
+{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+
+    color: #6d7995;
+}
+
+
+
+.services .buttons
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 52px;
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
+
+.services .buttons > *
+{
+    width: calc(33.333% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+.services .buttons .btn
+{
+    font-size: 18px;
+    line-height: 20px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 53px;
+    padding: 11px;
+
+    transition: .2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    color: #9bbdda;
+    border: 1px solid #9bbdda;
+    border-radius: 15px;
+}
+
+
+.services .buttons .btn:hover
+{
+    color: #fff;
+    background: #9bbdda;
+}
+
+
+
+/*--------------------
+    Download files
+--------------------*/
+.download_files .data
+{
+    padding: 72px 0;
+
+    border-radius: 15px;
+    background: #f4f7ff;
+}
+
+
+.download_files .items
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 480px);
+    margin-left: auto;
+
+    gap: 40px;
+}
+
+
+.download_files .item .name
+{
+    font-size: 24px;
+    line-height: calc(100% + 4px);
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-bottom: 11px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    color: #6d7995;
+    border-bottom: 1px solid #6d7995;
+}
+
+
+.download_files .item .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 12px;
+
+    color: #9bbdda;
+}
+
+.download_files .item .icon + .icon
+{
+    width: 14px;
+    height: 14px;
+    margin: 0 2px;
+
+    color: var(--text_color);
+}
+
+.download_files .item .active .icon,
+.download_files .item .icon + .icon
+{
+    display: none;
+}
+
+.download_files .item .active .icon + .icon
+{
+    display: block;
+}
+
+
+.download_files .item .form
+{
+    display: none;
+
+    padding-top: 35px;
+}
+
+
+.download_files .item .form .row
+{
+    justify-content: space-between;
+}
+
+
+.download_files .item .form .row > *
+{
+    width: calc(50% - 14px);
+}
+
+
+.download_files .item .form .field
+{
+    position: relative;
+}
+
+
+.download_files .item select
+{
+    display: none;
+}
+
+
+.download_files .item .nice-select
+{
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.download_files .item .nice-select.disabled
+{
+    pointer-events: none;
+}
+
+
+.download_files .item .nice-select .current
+{
+    display: flex;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    height: 54px;
+    padding: 0 59px 0 16px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #9bbdda;
+    border: 1px solid;
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+.download_files .item .nice-select-dropdown
+{
+    position: absolute;
+    z-index: 9;
+    top: 100%;
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    width: 100%;
+    margin-top: 1px;
+    padding: 4px 8px 4px 0;
+
+    transition: .2s linear;
+    transform: none;
+
+    opacity: 0;
+    border: 1px solid #9bbdda;
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+.download_files .item .nice-select .list
+{
+    overflow: auto;
+
+    max-height: 208px;
+
+    overscroll-behavior-y: contain;
+}
+
+
+.download_files .item .nice-select .list::-webkit-scrollbar
+{
+    width: 4px;
+    height: 4px;
+}
+
+
+.download_files .item .nice-select .list .optgroup
+{
+    font-weight: 700;
+
+    display: block;
+
+    padding: 8px 16px;
+
+    list-style-type: none;
+
+    cursor: pointer;
+    white-space: nowrap;
+
+    color: var(--text_color);
+}
+
+
+.download_files .item .nice-select .list .option
+{
+    display: block;
+
+    padding: 4px 16px 4px 32px;
+
+    list-style-type: none;
+
+    cursor: pointer;
+    white-space: nowrap;
+
+    color: #9bbdda;
+}
+
+
+.download_files .item .nice-select .list .option:empty
+{
+    display: none;
+}
+
+
+.download_files .item select ~ .arr
+{
+    position: absolute;
+    z-index: 3;
+    top: 24px;
+    right: 12px;
+
+    display: block;
+
+    width: 14px;
+    height: 8px;
+
+    pointer-events: none;
+
+    color: #9abbd8;
+}
+
+
+.download_files .item .nice-select.open .nice-select-dropdown
+{
+    visibility: visible;
+
+    transform: none;
+
+    opacity: 1;
+}
+
+
+.download_files .item .link
+{
+    display: none;
+
+    margin-top: 8px;
+
+    text-align: right;
+
+    color: #6d7995;
+}
+
+
+.download_files .item select.selected ~ .link
+{
+    display: block;
+}
+
+
+.download_files .item .link a
+{
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: currentColor;
 }
 
 
