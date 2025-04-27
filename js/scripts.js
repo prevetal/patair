@@ -304,6 +304,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		form.find('select[name="equipment"]').removeAttr('disabled')
 		form.find('.nice-select.disabled').removeClass('disabled')
 	})
+
+
+	// Category
+	$('.category_info .item .head').click(function(e) {
+		e.preventDefault()
+
+		const item = $(this).closest('.item')
+
+		item.toggleClass('.open')
+		item.find('.data').slideToggle(300)
+	})
 })
 
 
