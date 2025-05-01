@@ -1,0 +1,404 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 28px;
+        --font_size_title_big: 36px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    header .logo img
+    {
+        width: 146px;
+        height: 30px;
+    }
+
+
+    header .search
+    {
+        margin-left: 24px;
+    }
+
+
+    header .search form
+    {
+        max-width: calc(100vw - 220px);
+    }
+
+
+    header .search .input
+    {
+        font-size: 16px;
+
+        height: 36px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    .page_head .data
+    {
+        padding-left: 0;
+    }
+
+
+    .page_head .cont,
+    .page_head.small .cont
+    {
+        min-height: 200px;
+        padding-top: 80px;
+        padding-bottom: 24px;
+    }
+
+
+    .page_head .big_arrow
+    {
+        top: -16px;
+        left: 24px;
+
+        width: 88px;
+        height: 92px;
+
+        transform: rotate(90deg);
+    }
+
+
+    .page_head.small .big_arrow
+    {
+        top: -16px;
+    }
+
+
+    .page_head .title.big_m
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .page_head .desc,
+    .page_head .desc.big_w
+    {
+        width: 100%;
+
+        gap: 16px;
+    }
+
+
+    .page_head .date
+    {
+        font-size: 17px;
+
+        margin-top: 28px;
+    }
+
+
+    .page_head .img
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: -24px;
+
+        border-radius: 0 0 20px 20px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 25px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 20px;
+    }
+
+
+    .form .submit_btn
+    {
+        min-width: 208px;
+        height: 44px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .slider.right
+    {
+        float: none;
+
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .list
+    {
+        display: flex;
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+
+    .category_info .item .thumb
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .category_info .item .name
+    {
+        font-size: 18px;
+
+        width: calc(100% - 132px);
+        padding: 12px 0;
+    }
+
+
+    .category_info .item .data
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -40px;
+        margin-left: 0;
+
+        --count: 1;
+    }
+
+
+    .articles .row > *
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .row
+    {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .contacts_info .item
+    {
+        font-size: 15px;
+
+        width: 100%;
+        padding: 20px 20px 52px;
+
+        gap: 20px;
+    }
+
+
+    .contacts_info .item .arrow
+    {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .form
+    {
+        margin-top: 28px;
+        padding: 20px 20px 68px;
+    }
+
+
+    .feedback .form:before
+    {
+        width: 112px;
+        height: 32px;
+    }
+
+
+    .feedback .form:after
+    {
+        left: 112px;
+
+        width: 40px;
+        height: 32px;
+    }
+
+
+    .feedback .form .submit_btn
+    {
+        margin-top: 20px;
+        margin-right: -20px;
+        margin-bottom: -20px;
+    }
+
+
+    .feedback .form .submit_btn span
+    {
+        width: 160px;
+        height: 44px;
+        padding: 0 20px;
+    }
+
+
+    .feedback .form .submit_btn .arrow
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    footer .bottom
+    {
+        font-size: 13px;
+    }
+
+
+    footer .bottom .cont
+    {
+        gap: 12px;
+    }
+
+
+    footer .data
+    {
+        padding: 40px 0 20px;
+    }
+
+
+    footer .col
+    {
+        width: 100%;
+    }
+
+
+    footer .subscribe
+    {
+        width: 100%;
+    }
+
+
+    footer .title
+    {
+        margin-bottom: 20px;
+        padding-bottom: 11px;
+    }
+
+
+    footer .socials
+    {
+        gap: 20px;
+    }
+
+
+    footer .copyright
+    {
+        line-height: 17px;
+
+        width: 100%;
+    }
+
+
+    footer .text
+    {
+        line-height: 17px;
+
+        width: 100%;
+
+        text-align: left;
+    }
+}

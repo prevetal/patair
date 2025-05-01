@@ -11,6 +11,51 @@
 
 
 
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 52px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .date
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 20px;
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .text_block .slider .swiper-horizontal > .swiper-pagination-bullets,
+    .text_block .slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .text_block .slider .swiper-pagination-custom,
+    .text_block .slider .swiper-pagination-fraction
+    {
+        bottom: 24px;
+    }
+
+
+
     /*-------------------
         First section
     -------------------*/
@@ -54,6 +99,145 @@
 
         width: 140px;
         height: 146px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+    .page_head .data
+    {
+        padding-left: 120px;
+    }
+
+
+    .page_head .cont
+    {
+        min-height: 480px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .page_head.small .cont
+    {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .page_head .big_arrow
+    {
+        left: -24px;
+
+        width: 140px;
+        height: 146px;
+    }
+
+
+    .page_head .big_arrow,
+    .page_head.small .big_arrow
+    {
+        top: 56px;
+    }
+
+
+    .page_head .title
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .page_head .title.big_m
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .page_head .desc,
+    .page_head .desc.big_w
+    {
+        font-size: 20px;
+
+        width: 530px;
+
+        gap: 24px;
+    }
+
+
+    .page_head .desc br
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -48px;
+        margin-left: -24px;
+    }
+
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 48px;
+        margin-left: 24px;
+    }
+
+
+    .articles .article .thumb
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .row
+    {
+        gap: 24px;
+    }
+
+
+    .contacts_info .item
+    {
+        font-size: 22px;
+
+        padding: 40px;
+
+        gap: 40px;
+    }
+
+
+    .contacts_info .item .arrow
+    {
+        right: 40px;
+        bottom: 40px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .form
+    {
+        width: calc(50% - 12px);
     }
 
 

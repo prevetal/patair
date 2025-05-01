@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		const item = $(this).closest('.item')
 
-		item.toggleClass('.open')
+		item.toggleClass('open')
 		item.find('.data').slideToggle(300)
 	})
 })

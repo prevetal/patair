@@ -1,0 +1,239 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 32px;
+        --font_size_title_big: 48px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .swiper-pagination-bullets
+    {
+        height: 10px;
+    }
+
+
+    .swiper-pagination-bullet
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu
+    {
+        gap: 24px;
+    }
+
+
+    header .menu_item:first-child
+    {
+        margin-right: 88px;
+    }
+
+
+    header .search form
+    {
+        max-width: calc(100vw - 268px);
+    }
+
+
+    header .search .input
+    {
+        height: 40px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .data
+    {
+        padding-left: 104px;
+    }
+
+
+    .page_head .cont
+    {
+        min-height: 348px;
+    }
+
+
+    .page_head.small .cont
+    {
+        min-height: 220px;
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+
+    .page_head .big_arrow
+    {
+        top: 30px;
+
+        width: 120px;
+        height: 125px;
+    }
+
+
+    .page_head.small .big_arrow
+    {
+        top: 30px;
+    }
+
+
+    .page_head .title.big_m
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .page_head .desc,
+    .page_head .desc.big_w
+    {
+        font-size: 16px;
+
+        width: 340px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit .agree
+    {
+        width: 100%;
+    }
+
+
+    .feedback .form .submit_btn
+    {
+        margin-top: 24px;
+        margin-right: -24px;
+        margin-bottom: -24px;
+        margin-left: auto;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 16px;
+    }
+
+
+    .text_block .slider .swiper-horizontal > .swiper-pagination-bullets,
+    .text_block .slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .text_block .slider .swiper-pagination-custom,
+    .text_block .slider .swiper-pagination-fraction
+    {
+        bottom: 16px;
+
+        gap: 12px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .thumb
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 18px;
+    }
+
+
+    .articles .article .desc
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item
+    {
+        font-size: 18px;
+
+        gap: 24px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .form
+    {
+        padding: 24px 24px 80px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .bottom
+    {
+        padding: 20px 0;
+    }
+
+
+    footer .cont
+    {
+        justify-content: space-between;
+
+        gap: 40px;
+    }
+
+
+    footer .subscribe
+    {
+        width: 352px;
+    }
+
+
+    footer .email
+    {
+        font-size: 36px;
+    }
+}

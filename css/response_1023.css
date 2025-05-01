@@ -1,0 +1,233 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 28px;
+        --font_size_title_big: 40px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+
+    header .menu
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .data
+    {
+        padding-right: 0;
+        padding-left: 80px;
+    }
+
+
+    .page_head.small .cont
+    {
+        min-height: 180px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .page_head .big_arrow
+    {
+        width: 100px;
+        height: 105px;
+    }
+
+
+    .page_head.small .big_arrow
+    {
+        top: 25px;
+    }
+
+
+    .page_head .desc,
+    .page_head .desc.big_w
+    {
+        font-size: var(--font_size);
+
+        width: 268px;
+    }
+
+
+    .page_head .date
+    {
+        font-size: 18px;
+
+        margin-top: 36px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .item .thumb
+    {
+        width: 88px;
+        height: 88px;
+    }
+
+
+    .category_info .item .name
+    {
+        font-size: 20px;
+
+        padding: 12px 0;
+    }
+
+
+    .category_info .item .data
+    {
+        padding-top: 24px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(50% - 24px);
+
+        --count: 2;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item
+    {
+        font-size: 16px;
+
+        padding: 24px 24px 60px;
+    }
+
+
+    .contacts_info .item br
+    {
+        display: none;
+    }
+
+
+    .contacts_info .item .arrow
+    {
+        width: 60px;
+        height: 24px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .data
+    {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+
+    .feedback .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .feedback .block_head .title br ~ br
+    {
+        display: none;
+    }
+
+
+    .feedback .email a
+    {
+        height: 40px;
+        padding: 0 15px;
+    }
+
+
+    .feedback .form
+    {
+        width: 100%;
+        margin-top: 32px;
+        padding: 24px 24px 80px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col:first-child
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+
+    footer .logo
+    {
+        width: 100%;
+    }
+
+
+    footer .email
+    {
+        font-size: 32px;
+    }
+}

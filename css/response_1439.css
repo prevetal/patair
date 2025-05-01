@@ -1,0 +1,238 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 36px;
+        --font_size_title_big: 56px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 48px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu
+    {
+        gap: 28px;
+    }
+
+
+    header .search
+    {
+        margin-left: 28px;
+    }
+
+
+    header .search .input
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .cont
+    {
+        min-height: 424px;
+    }
+
+
+    .page_head.small .cont
+    {
+        min-height: 240px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .page_head .big_arrow,
+    .page_head.small .big_arrow
+    {
+        top: 32px;
+    }
+
+
+    .page_head .title.big_m
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .page_head .desc,
+    .page_head .desc.big_w
+    {
+        font-size: 18px;
+
+        width: 456px;
+    }
+
+
+    .page_head .date
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 24px;
+    }
+
+
+    .form .checkbox
+    {
+        font-size: 14px;
+    }
+
+
+    .feedback .form .submit_btn
+    {
+        margin-right: -32px;
+        margin-bottom: -32px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 18px;
+    }
+
+
+    .text_block .slider .swiper-horizontal > .swiper-pagination-bullets,
+    .text_block .slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .text_block .slider .swiper-pagination-custom,
+    .text_block .slider .swiper-pagination-fraction
+    {
+        bottom: 20px;
+
+        gap: 16px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .text_block
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .category_info .item .items
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item
+    {
+        font-size: 20px;
+
+        padding: 40px 24px;
+    }
+
+
+    .contacts_info .item .arrow
+    {
+        right: 24px;
+        bottom: 24px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .form
+    {
+        padding: 24px 32px 88px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .cont
+    {
+        gap: 40px 140px;
+    }
+
+
+    footer .subscribe
+    {
+        width: 360px;
+    }
+
+
+    footer .subscribe .checkbox
+    {
+        font-size: 14px;
+    }
+
+
+    footer .email
+    {
+        font-size: 40px;
+
+        margin-top: 40px;
+    }
+
+
+    footer .socials
+    {
+        gap: 24px;
+    }
+
+
+    footer .bottom
+    {
+        font-size: 14px;
+    }
+}

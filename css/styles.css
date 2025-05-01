@@ -824,7 +824,7 @@ header .search form
     visibility: hidden;
 
     width: 1000px;
-    max-width: 100vw;
+    max-width: calc(100vw - 288px);
 
     transition: .2s linear;
     transform: translate(100%, -50%);
@@ -1332,7 +1332,7 @@ header .search .close_btn:hover
 .form .input
 {
     font-family: var(--font_family);
-    font-size: 18px;
+    font-size: var(--font_size);
 
     display: block;
 
@@ -1357,7 +1357,7 @@ header .search .close_btn:hover
 .form textarea
 {
     font-family: var(--font_family);
-    font-size: 18px;
+    font-size: var(--font_size);
 
     display: block;
 
@@ -1552,8 +1552,6 @@ header .search .close_btn:hover
 
 .form .submit_btn
 {
-    font-size: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -3064,7 +3062,6 @@ header .search .close_btn:hover
 
 .articles .article .desc
 {
-    font-size: 18px;
     line-height: calc(100% + 2px);
 
     display: -webkit-box;
@@ -3096,7 +3093,6 @@ header .search .close_btn:hover
 
 .feedback .desc
 {
-    font-size: 18px;
     line-height: calc(100% + 2px);
 }
 
@@ -3202,7 +3198,6 @@ header .search .close_btn:hover
 
 .feedback .form .title
 {
-    font-size: 18px;
     line-height: calc(100% + 2px);
 
     margin-bottom: 20px;
@@ -3397,6 +3392,13 @@ header .search .close_btn:hover
     text-transform: uppercase;
 
     color: #6d7995;
+}
+
+
+.contacts_info .item .info,
+.contacts_info .item .address
+{
+    width: 100%;
 }
 
 
@@ -4343,11 +4345,13 @@ header .search .close_btn:hover
     align-content: flex-end;
     align-items: flex-end;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     cursor: pointer;
 
     border-bottom: 1px solid #6d7995;
+
+    gap: 16px;
 }
 
 
@@ -4378,12 +4382,50 @@ header .search .close_btn:hover
     font-size: 24px;
     line-height: calc(100% + 4px);
 
-    width: calc(100% - 120px);
+    width: calc(100% - 148px);
     padding: 16px 0;
 
     text-transform: uppercase;
 
     color: #6d7995;
+}
+
+
+.category_info .item .arrow
+{
+    display: block;
+
+    width: 17px;
+    height: 13px;
+    margin-bottom: 2px;
+    margin-left: auto;
+
+    color: #9bbdda;
+}
+
+
+.category_info .item.open .arrow
+{
+    display: none;
+}
+
+
+.category_info .item .icon
+{
+    display: none;
+
+    width: 14px;
+    height: 14px;
+    margin-bottom: 2px;
+    margin-left: auto;
+
+    color: #6d7995;
+}
+
+
+.category_info .item.open .icon
+{
+    display: block;
 }
 
 

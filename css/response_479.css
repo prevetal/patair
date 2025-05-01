@@ -1,0 +1,73 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 25px;
+        --font_size_title_big: 30px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 127px;
+        height: 26px;
+    }
+
+
+    header .search
+    {
+        margin-left: 20px;
+    }
+
+
+    header .search form
+    {
+        max-width: calc(100vw - 192px);
+    }
+
+
+    header .search .input
+    {
+        font-size: 15px;
+
+        height: 32px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .item .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .email
+    {
+        font-size: 30px;
+    }
+}
