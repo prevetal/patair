@@ -218,6 +218,123 @@
 
 
     /*-------------------
+        First section
+    -------------------*/
+    .first_section .data
+    {
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+
+    .first_section .cont
+    {
+        min-height: 200px;
+        padding-top: 80px;
+        padding-bottom: 24px;
+    }
+
+
+    .first_section .circle_text
+    {
+        top: 0;
+    }
+
+
+    .first_section .title
+    {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+
+    .first_section .solutions
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        margin-bottom: 52px;
+    }
+
+
+    .first_section .line
+    {
+        line-height: 8px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .first_section .sub_title
+    {
+        font-size: 18px;
+    }
+
+
+    .first_section .desc
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .first_section .link
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+    .first_section .big_arrow
+    {
+        top: -16px;
+        left: 24px;
+
+        width: 88px;
+        height: 92px;
+
+        transform: rotate(90deg);
+    }
+
+
+    .first_section .img
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+        border-radius: 0 0 20px 20px;
+    }
+
+
+
+    /*---------------
+        Equipment
+    ---------------*/
+    .equipment .buttons
+    {
+        margin-top: 40px;
+        margin-bottom: -12px;
+        margin-left: 0;
+    }
+
+
+    .equipment .buttons .btn
+    {
+        width: 100%;
+        margin-bottom: 12px;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
         Category info
     -------------------*/
     .category_info .list

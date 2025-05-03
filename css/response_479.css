@@ -54,6 +54,29 @@
 
 
     /*-------------------
+        First section
+    -------------------*/
+    .first_section .circle_text
+    {
+        width: 68px;
+        height: 68px;
+    }
+
+
+    .first_section .sub_title br
+    {
+        display: none;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 12px;
+    }
+
+
+
+    /*-------------------
         Category info
     -------------------*/
     .category_info .item .name

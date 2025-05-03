@@ -145,6 +145,55 @@
 
 
     /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        min-height: 600px;
+    }
+
+
+    .first_section .circle_text
+    {
+        top: 24px;
+        right: 24px;
+
+        width: 84px;
+        height: 84px;
+    }
+
+
+    .first_section .solutions
+    {
+        top: 168px;
+        right: 80px;
+    }
+
+
+    .first_section .sub_title
+    {
+        font-size: 22px;
+    }
+
+
+    .first_section .big_arrow
+    {
+        top: 32px;
+    }
+
+
+
+    /*---------------
+        Equipment
+    ---------------*/
+    .equipment .swiper
+    {
+        padding-bottom: 52px;
+    }
+
+
+
+    /*-------------------
         Category info
     -------------------*/
     .category_info .text_block

@@ -144,15 +144,6 @@
     }
 
 
-    .feedback .form .submit_btn
-    {
-        margin-top: 24px;
-        margin-right: -24px;
-        margin-bottom: -24px;
-        margin-left: auto;
-    }
-
-
 
     /*----------------
         Typography
@@ -171,6 +162,84 @@
         bottom: 16px;
 
         gap: 12px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        min-height: 564px;
+    }
+
+
+    .first_section .data
+    {
+        padding-left: 104px;
+    }
+
+
+    .first_section .solutions
+    {
+        top: 148px;
+        right: 24px;
+
+        width: 192px;
+        padding: 16px;
+    }
+
+
+    .first_section .desc br
+    {
+        display: none;
+    }
+
+
+    .first_section .hr
+    {
+        margin-top: 12px;
+    }
+
+
+    .first_section .link_arrow
+    {
+        margin-top: 20px;
+    }
+
+
+    .first_section .big_arrow
+    {
+        top: 30px;
+
+        width: 120px;
+        height: 125px;
+    }
+
+
+
+    /*---------------
+        Equipment
+    ---------------*/
+    .equipment .swiper
+    {
+        padding-bottom: 48px;
+    }
+
+
+    .equipment .item .thumb
+    {
+        height: 252px;
+    }
+
+
+    .equipment .buttons .btn
+    {
+        font-size: 16px;
+        line-height: calc(100% + 4px);
+
+        min-height: 48px;
     }
 
 
@@ -215,6 +284,15 @@
     .feedback .form
     {
         padding: 24px 24px 80px;
+    }
+
+
+    .feedback .form .submit_btn
+    {
+        margin-top: 24px;
+        margin-right: -24px;
+        margin-bottom: -24px;
+        margin-left: auto;
     }
 
 

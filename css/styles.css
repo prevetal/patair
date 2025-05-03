@@ -2059,6 +2059,7 @@ header .search .close_btn:hover
 {
     line-height: 17px;
 
+    max-width: calc(100% - 168px);
     margin-top: 20px;
 
     color: #c7cee1;

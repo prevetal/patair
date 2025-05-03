@@ -106,6 +106,114 @@
 
 
     /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        min-height: 556px;
+    }
+
+
+    .first_section .data
+    {
+        padding-left: 80px;
+    }
+
+
+    .first_section .big_arrow
+    {
+        width: 100px;
+        height: 105px;
+    }
+
+
+    .first_section .circle_text
+    {
+        top: 16px;
+        right: 16px;
+
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .first_section .title
+    {
+        padding-right: 80px;
+    }
+
+
+    .first_section .solutions
+    {
+        font-size: 14px;
+
+        top: 180px;
+        right: 16px;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 188px;
+        padding: 12px;
+    }
+
+
+    .first_section .solutions .icon
+    {
+        width: 40px;
+        height: 20px;
+    }
+
+
+    .first_section .sub_title
+    {
+        font-size: 20px;
+
+        gap: 16px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+    .first_section .link
+    {
+        line-height: 16px;
+    }
+
+
+    .first_section .link_arrow
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*---------------
+        Equipment
+    ---------------*/
+    .equipment .swiper
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .equipment .item .thumb
+    {
+        height: 248px;
+    }
+
+
+
+    /*-------------------
         Category info
     -------------------*/
     .category_info .item .thumb

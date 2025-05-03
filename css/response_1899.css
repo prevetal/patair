@@ -86,10 +86,27 @@
     }
 
 
+    .first_section .circle_text
+    {
+        top: 40px;
+        right: 20px;
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+
     .first_section .solutions
     {
-        top: 212px;
+        top: 192px;
         right: 92px;
+    }
+
+
+    .first_section .link_arrow
+    {
+        margin-top: 24px;
     }
 
 
@@ -99,6 +116,26 @@
 
         width: 140px;
         height: 146px;
+    }
+
+
+
+    /*---------------
+        Equipment
+    ---------------*/
+    .equipment .buttons
+    {
+        margin-top: 48px;
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .equipment .buttons > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
     }
 
 
