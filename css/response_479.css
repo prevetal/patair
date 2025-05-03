@@ -63,6 +63,43 @@
 
 
 
+    /*-------------------
+        About objects
+    -------------------*/
+    .about_objects .info
+    {
+        padding-bottom: 100px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .image
+    {
+        width: 100%;
+        height: 300px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service .name
+    {
+        font-size: 18px;
+    }
+
+
+    .services .service .desc
+    {
+        font-size: 15px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

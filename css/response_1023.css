@@ -205,6 +205,181 @@
 
 
 
+    /*------------------
+        Three whales
+    ------------------*/
+    .three_whales .row > *,
+    .three_whales .item.middle
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .three_whales .item
+    {
+        height: 280px;
+    }
+
+
+    .three_whales .item.big
+    {
+        width: calc(100% - 24px);
+        padding: 24px;
+    }
+
+
+
+    /*-----------------
+        About stats
+    -----------------*/
+    .about_stats .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .about_stats .item .desc
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------------
+        About objects
+    -------------------*/
+    .about_objects .image
+    {
+        width: 100%;
+    }
+
+
+    .about_objects .image img
+    {
+        height: auto;
+    }
+
+
+    .about_objects .info
+    {
+        width: calc(100% - 48px);
+        margin: -48px auto 0;
+        padding: 40px 48px;
+    }
+
+
+    .about_objects .info .title
+    {
+        font-size: 16px;
+
+        height: 36px;
+        padding-left: 28px;
+    }
+
+
+    .about_objects .info .title:after
+    {
+        width: 44px;
+        height: calc(100% + 1px);
+    }
+
+
+    .about_objects .info .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .about_objects .info .link
+    {
+        bottom: 32px;
+    }
+
+
+    .about_objects .info .link span
+    {
+        height: 44px;
+        padding: 0 20px;
+    }
+
+
+    .about_objects .info .link .arrow
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .product_info .head .data
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .col_left
+    {
+        width: 100%;
+    }
+
+
+    .product_info .col_main
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .product_info .back_link
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service .name
+    {
+        width: calc(100% - 64px);
+    }
+
+
+    .services .service .icon
+    {
+        width: 48px;
+        height: 52px;
+    }
+
+
+    .services .service .desc.padding
+    {
+        padding-right: 0;
+        padding-bottom: 48px;
+    }
+
+
+
+    /*--------------------
+        Download files
+    --------------------*/
+    .download_files .items
+    {
+        width: 100%;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

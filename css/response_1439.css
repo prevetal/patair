@@ -97,6 +97,16 @@
 
 
 
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head.big_m
+    {
+        margin-bottom: 48px;
+    }
+
+
+
     /*------------------
         Form elements
     ------------------*/
@@ -109,13 +119,6 @@
     .form .checkbox
     {
         font-size: 14px;
-    }
-
-
-    .feedback .form .submit_btn
-    {
-        margin-right: -32px;
-        margin-bottom: -32px;
     }
 
 
@@ -160,6 +163,12 @@
     /*--------------
         Articles
     --------------*/
+    .articles .swiper
+    {
+        padding-bottom: 52px;
+    }
+
+
     .articles .article .name
     {
         font-size: 20px;
@@ -192,6 +201,150 @@
     .feedback .form
     {
         padding: 24px 32px 88px;
+    }
+
+
+    .feedback .form .submit_btn
+    {
+        margin-right: -32px;
+        margin-bottom: -32px;
+    }
+
+
+
+    /*------------------
+        Three whales
+    ------------------*/
+    .three_whales .item
+    {
+        height: 360px;
+    }
+
+
+    .three_whales .item.middle
+    {
+        width: 420px;
+    }
+
+
+    .three_whales .item.big
+    {
+        width: calc(100% - 702px);
+    }
+
+
+    .three_whales .item .data
+    {
+        padding: 24px;
+    }
+
+
+    .three_whales .item .desc br
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        About stats
+    -----------------*/
+    .about_stats .item
+    {
+        padding-left: 68px;
+    }
+
+
+    .about_stats .item .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .about_stats .item .desc br
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        About objects
+    -------------------*/
+    .about_objects .image
+    {
+        width: 620px;
+    }
+
+
+    .about_objects .info
+    {
+        width: calc(100% - 540px);
+        margin-left: -80px;
+        padding: 40px 40px 60px 80px;
+    }
+
+
+    .about_objects .info .desc
+    {
+        font-size: 20px;
+        line-height: calc(100% + 4px);
+
+        margin-top: 32px;
+    }
+
+
+    .about_objects .info .link
+    {
+        bottom: 50px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head .data
+    {
+        font-size: 20px;
+    }
+
+
+    .product_info .col_main
+    {
+        width: calc(100% - 440px);
+    }
+
+
+    .product_info .order_code .label
+    {
+        margin-bottom: 28px;
+        padding-bottom: 11px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service .name
+    {
+        font-size: 20px;
+
+        width: calc(100% - 72px);
+    }
+
+
+    .services .service .icon
+    {
+        width: 52px;
+        height: 60px;
+    }
+
+
+    .services .service .desc.padding
+    {
+        padding-right: 64px;
     }
 
 

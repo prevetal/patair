@@ -242,6 +242,177 @@
 
 
 
+    /*------------------
+        Three whales
+    ------------------*/
+    .three_whales .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .three_whales .row > *
+    {
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .three_whales .item.big
+    {
+        width: calc(100% - 732px);
+        padding: 24px;
+    }
+
+
+    .three_whales .item .data
+    {
+        padding: 28px;
+    }
+
+
+
+    /*-----------------
+        About stats
+    -----------------*/
+    .about_stats .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .about_stats .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .about_stats .item
+    {
+        padding-left: 80px;
+    }
+
+
+
+    /*-------------------
+        About objects
+    -------------------*/
+    .about_objects
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+    .about_objects .data
+    {
+        padding: 24px 0;
+    }
+
+
+    .about_objects .info
+    {
+        width: calc(100% - 602px);
+        margin-left: -88px;
+        padding: 48px 60px 72px 100px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -48px;
+        margin-left: -24px;
+    }
+
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 48px;
+        margin-left: 24px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .services .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .services .service
+    {
+        padding: 24px;
+    }
+
+
+    .services .service .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 4px);
+    }
+
+
+    .services .service .desc.padding
+    {
+        padding-right: 48px;
+    }
+
+
+
+    .services .buttons
+    {
+        margin-top: 48px;
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .services .buttons > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*--------------------
+        Download files
+    --------------------*/
+    .download_files .item .form
+    {
+        padding-top: 24px;
+    }
+
+
+    .download_files .item .form .row > *
+    {
+        width: calc(50% - 12px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

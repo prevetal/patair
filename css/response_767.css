@@ -162,6 +162,28 @@
     }
 
 
+    .block_head .title br
+    {
+        display: none;
+    }
+
+
+    .block_head .title .small_circles
+    {
+        width: 48px;
+        height: 24px;
+        margin-top: -5px;
+        margin-left: 8px;
+    }
+
+
+    .block_head .all_link
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
 
     /*------------------
         Form elements
@@ -234,6 +256,12 @@
     /*--------------
         Articles
     --------------*/
+    .articles .swiper
+    {
+        padding-bottom: 48px;
+    }
+
+
     .articles .row
     {
         margin-bottom: -40px;
@@ -328,6 +356,253 @@
     {
         width: 44px;
         height: 44px;
+    }
+
+
+
+    /*------------------
+        Three whales
+    ------------------*/
+    .three_whales .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+
+    .three_whales .row > *,
+    .three_whales .item.middle,
+    .three_whales .item.big
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .three_whales .item,
+    .three_whales .item.big
+    {
+        height: 240px;
+        padding: 20px;
+    }
+
+
+    .three_whales .item .data
+    {
+        padding: 20px;
+    }
+
+
+
+    /*-----------------
+        About stats
+    -----------------*/
+    .about_stats .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+
+    .about_stats .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .about_stats .item
+    {
+        padding: 20px;
+    }
+
+
+    .about_stats .item .val
+    {
+        line-height: calc(100% + 4px);
+    }
+
+
+
+    /*-------------------
+        About objects
+    -------------------*/
+    .about_objects
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+    .about_objects .data
+    {
+        padding: 20px 0 40px;
+    }
+
+
+    .about_objects .info
+    {
+        width: calc(100% - 40px);
+        margin: -40px auto 0;
+        padding: 32px 32px 43px;
+    }
+
+
+    .about_objects .info .title
+    {
+        padding-left: 20px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .product_name
+    {
+        font-size: 20px;
+    }
+
+
+    .product_info .product_name br
+    {
+        display: none;
+    }
+
+
+    .product_info .order_code .label
+    {
+        font-size: 15px;
+
+        margin-bottom: 20px;
+        padding-bottom: 7px;
+    }
+
+
+    .product_info .text_block
+    {
+        font-size: 15px;
+    }
+
+
+    .product_info .text_block ul li
+    {
+        padding-left: 24px;
+    }
+
+
+    .product_info .text_block ul li:before
+    {
+        top: 8px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+
+    .services .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .services .service
+    {
+        padding: 20px;
+    }
+
+
+    .services .service .desc.padding
+    {
+        padding-bottom: 44px;
+    }
+
+
+    .services .service .arrow,
+    .services .service .download
+    {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+    .services .buttons
+    {
+        margin-top: 40px;
+        margin-bottom: -12px;
+        margin-left: 0;
+    }
+
+
+    .services .buttons .btn
+    {
+        width: 100%;
+        margin-bottom: 12px;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------------
+        Download files
+    --------------------*/
+    .download_files .data
+    {
+        padding: 50px 0;
+    }
+
+
+    .download_files .items
+    {
+        gap: 25px;
+    }
+
+
+    .download_files .item .name
+    {
+        font-size: 16px;
+    }
+
+
+    .download_files .item .form
+    {
+        padding-top: 20px;
+    }
+
+
+    .download_files .item .form .row
+    {
+        gap: 20px;
+    }
+
+
+    .download_files .item .form .row > *
+    {
+        width: 100%;
+    }
+
+
+    .download_files .item .nice-select .current
+    {
+        height: 44px;
+    }
+
+
+    .download_files .item select ~ .arr
+    {
+        top: 18px;
     }
 
 

@@ -125,6 +125,16 @@
 
 
 
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head.big_m
+    {
+        margin-bottom: 40px;
+    }
+
+
+
     /*------------------
         Form elements
     ------------------*/
@@ -205,6 +215,257 @@
     .feedback .form
     {
         padding: 24px 24px 80px;
+    }
+
+
+
+    /*------------------
+        Three whales
+    ------------------*/
+    .three_whales .row > *
+    {
+        width: 184px;
+    }
+
+
+    .three_whales .item
+    {
+        font-size: 20px;
+
+        height: 300px;
+    }
+
+
+    .three_whales .item.middle
+    {
+        width: 340px;
+    }
+
+
+    .three_whales .item.big
+    {
+        width: calc(100% - 596px);
+        padding: 12px;
+    }
+
+
+    .three_whales .item .desc
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .three_whales .item .number
+    {
+        font-size: 20px;
+
+        right: 12px;
+        bottom: 12px;
+
+        width: 52px;
+        height: 52px;
+    }
+
+
+
+    /*-----------------
+        About stats
+    -----------------*/
+    .about_stats .row
+    {
+        padding: 0;
+    }
+
+
+    .about_stats .item
+    {
+        padding: 24px;
+    }
+
+
+    .about_stats .item .icon
+    {
+        height: 40px;
+    }
+
+
+    .about_stats .item .desc
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------------
+        About objects
+    -------------------*/
+    .about_objects .image
+    {
+        width: 60%;
+    }
+
+
+    .about_objects .info
+    {
+        width: calc(50% + 48px);
+        margin-left: calc(-10% - 48px);
+        padding: 40px 40px 40px 48px;
+    }
+
+
+    .about_objects .info .title
+    {
+        font-size: 16px;
+
+        height: 36px;
+        padding-left: 28px;
+    }
+
+
+    .about_objects .info .title:after
+    {
+        width: 44px;
+        height: calc(100% + 1px);
+    }
+
+
+    .about_objects .info .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .about_objects .info .link
+    {
+        bottom: 32px;
+    }
+
+
+    .about_objects .info .link span
+    {
+        height: 44px;
+        padding: 0 20px;
+    }
+
+
+    .about_objects .info .link .arrow
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head .data
+    {
+        font-size: 18px;
+    }
+
+
+    .product_info .col_left
+    {
+        width: 312px;
+    }
+
+
+    .product_info .files a
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .files span
+    {
+        width: calc(100% - 53px);
+    }
+
+
+    .product_info .col_main
+    {
+        width: calc(100% - 380px);
+    }
+
+
+    .product_info .order_code .label
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .text_block
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .text_block ul li:before
+    {
+        top: 9px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .services .service .desc.padding
+    {
+        padding-right: 88px;
+    }
+
+
+    .services .buttons .btn
+    {
+        font-size: 16px;
+        line-height: calc(100% + 4px);
+
+        min-height: 48px;
+    }
+
+
+
+    /*--------------------
+        Download files
+    --------------------*/
+    .download_files .data
+    {
+        padding: 60px 0;
+    }
+
+
+    .download_files .items
+    {
+        width: calc(100% - 400px);
+
+        gap: 32px;
+    }
+
+
+    .download_files .item .name
+    {
+        font-size: 20px;
+    }
+
+
+    .download_files .item .nice-select .current
+    {
+        height: 48px;
+    }
+
+
+    .download_files .item select ~ .arr
+    {
+        top: 20px;
     }
 
 

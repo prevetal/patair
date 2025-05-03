@@ -3902,7 +3902,7 @@ header .search .close_btn:hover
 .services .service .name
 {
     font-size: 24px;
-    line-height: 28px;
+    line-height: calc(100% + 4px);
 
     align-self: center;
 
@@ -4084,6 +4084,12 @@ header .search .close_btn:hover
 }
 
 
+.download_files .item .name span
+{
+    max-width: calc(100% - 24px);
+}
+
+
 .download_files .item .icon
 {
     display: block;
@@ -4171,7 +4177,7 @@ header .search .close_btn:hover
     justify-content: flex-start;
 
     height: 54px;
-    padding: 0 59px 0 16px;
+    padding: 0 43px 0 16px;
 
     cursor: pointer;
     white-space: nowrap;
