@@ -311,6 +311,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		item.toggleClass('open')
 		item.find('.data').slideToggle(300)
 	})
+
+
+	// Mob. menu button
+	$('header .mob_menu_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+		$('header .menu').toggleClass('show')
+	})
 })
 
 

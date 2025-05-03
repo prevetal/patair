@@ -17,14 +17,14 @@
     ------------*/
     header .logo img
     {
-        width: 127px;
-        height: 26px;
+        width: 100px;
+        height: 21px;
     }
 
 
     header .search
     {
-        margin-left: 20px;
+        margin-left: 16px;
     }
 
 

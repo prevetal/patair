@@ -925,6 +925,89 @@ header .search .close_btn:hover
 
 
 
+header .mob_menu_btn
+{
+    position: relative;
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 33px;
+    height: 33px;
+    margin-left: 8px;
+
+    color: #6d7995;
+    border: 1px solid rgb(152, 185, 213);
+    border-radius: 5px;
+}
+
+
+header .mob_menu_btn span
+{
+    position: relative;
+
+    display: block;
+
+    width: 17px;
+    height: 1px;
+
+    transition: background .2s linear;
+
+    background: currentColor;
+}
+
+
+header .mob_menu_btn span:before,
+header .mob_menu_btn span:after
+{
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: .2s linear;
+
+    background: currentColor;
+}
+
+
+header .mob_menu_btn span:after
+{
+    top: 5px;
+}
+
+
+header .mob_menu_btn.active span
+{
+    background: transparent;
+}
+
+
+header .mob_menu_btn.active span:before
+{
+    top: 0;
+
+    transform: rotate(45deg);
+}
+
+
+header .mob_menu_btn.active span:after
+{
+    top: 0;
+
+    transform: rotate(-45deg);
+}
+
+
+
 /*---------------
     Page head
 ---------------*/

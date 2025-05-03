@@ -51,6 +51,12 @@
     }
 
 
+    header .menu
+    {
+        padding: 40px 20px;
+    }
+
+
     header .search
     {
         margin-left: 24px;

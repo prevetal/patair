@@ -25,7 +25,107 @@
 
     header .menu
     {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+
+        flex-direction: column;
+
+        width: 100%;
+        padding: 48px 24px;
+
+        transition: transform .3s linear;
+
+        border-top: 1px solid #9bbdda;
+        background: var(--bg);
+
+        gap: 20px;
+    }
+
+
+    header .menu.show
+    {
+        transform: translateX(-100%);
+    }
+
+
+    header .menu_item
+    {
+        width: 100%;
+    }
+
+
+    header .menu_item:first-child
+    {
+        margin-right: 0;
+    }
+
+
+    header .menu_item > a
+    {
+        font-size: 16px;
+
+        justify-content: flex-start;
+    }
+
+
+    header .menu_item > a .arr
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+    }
+
+
+    header .menu_item > a:after
+    {
         display: none;
+    }
+
+
+    header .sub_menu
+    {
+        position: relative;
+
+        display: none;
+        visibility: visible;
+
+        width: 100%;
+        padding: 20px 0 0;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    header .sub_menu.show
+    {
+        display: block;
+    }
+
+
+    header .sub_menu .row
+    {
+        margin-left: 0;
+    }
+
+
+    header .sub_menu .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    header .sub_menu a
+    {
+        padding: 8px 0;
+    }
+
+
+    header .mob_menu_btn
+    {
+        display: flex;
     }
 
 

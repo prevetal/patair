@@ -38,6 +38,31 @@
     }
 
 
+    header .sub_menu
+    {
+        padding: 24px 48px;
+    }
+
+
+    header .sub_menu .row
+    {
+        margin-left: -80px;
+    }
+
+
+    header .sub_menu .row > *
+    {
+        width: calc(33.333% - 80px);
+        margin-left: 80px;
+    }
+
+
+    header .sub_menu .row > *:before
+    {
+        left: -40px;
+    }
+
+
     header .search
     {
         margin-left: 28px;

@@ -58,6 +58,31 @@
     }
 
 
+    header .sub_menu
+    {
+        padding: 24px;
+    }
+
+
+    header .sub_menu .row
+    {
+        margin-left: -48px;
+    }
+
+
+    header .sub_menu .row > *
+    {
+        width: calc(33.333% - 48px);
+        margin-left: 48px;
+    }
+
+
+    header .sub_menu .row > *:before
+    {
+        left: -24px;
+    }
+
+
     header .search form
     {
         max-width: calc(100vw - 268px);
